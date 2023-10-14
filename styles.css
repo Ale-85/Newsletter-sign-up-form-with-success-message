@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1em;
+}
+
+.card-subscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_img_desktop {
+  display: none;
+}
+
+.main_img_mobile {
+  width: 100%;
+}
+
+.main_content {
+  margin-left: 1em;
+  padding-left: 1.9em;
+}
+
+h1 {
+  margin: 0.8em 0 0.5em;
+  font-size: 4.6rem;
+}
+
+p {
+  margin: 1.5em 0;
+  line-height: 1.5;
+}
+
+.list {
+  padding: 0;
+}
+
+.list_item {
+  list-style: none;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+.list_icon {
+  margin-right: 0.5em;
+  width: 15px;
+}
+
+.cta {
+  margin-left: 1.3em;
+  padding: 1em 1em;
+}
+
+.cta_label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.valid_email {
+  color: hsl(4, 100%, 67%);
+  margin-left: 20em;
+  visibility: hidden;
+}
+
+.error {
+  background-color: rgba(255, 98, 87, 0.2);
+  border: 1px solid hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+.cta_email {
+  margin-bottom: 1.7em;
+  margin-top: 0.5em;
+  display: block;
+  width: 90%;
+  padding: 1.2em 0 1.2em 0.5em;
+  border-radius: 5px;
+}
+
+.cta_button {
+  padding: 1.2em 0;
+  width: 92.5%;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  font-weight: 700;
+  margin-bottom: 2em;
+  border: none;
+}
+
+.cta_button:hover {
+  background: linear-gradient(to right, hsl(4, 67%, 48%), hsl(4, 100%, 67%));
+  box-shadow: 5px 7px 10px 5px rgba(204, 51, 40, 0.2);
+}
+
+.msg_success {
+  padding: 2em 5em;
+  display: none;
+}
+
+.logo_success {
+  width: 15%;
+}
+
+.text_success {
+  margin-bottom: 5em;
+}
+
+span {
+  font-weight: 700;
+}
+
+.btn_success {
+  margin-bottom: 2em;
+  padding: 1.5em 3em;
+  width: 100%;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 2em;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  .container {
+    max-width: 70%;
+    max-height: 50%;
+    margin: 3em auto;
+  }
+
+  .card-subscription {
+    display: flex;
+    flex-direction: row;
+
+    background-color: white;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+
+  .cta_card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3em;
+    width: 55%;
+  }
+
+  .image_desktop {
+    width: 45%;
+  }
+
+  .main_img_desktop {
+    display: unset;
+    max-width: 97%;
+    margin-top: 1.2em;
+  }
+
+  .main_img_mobile {
+    display: none;
+  }
+
+  .msg_success {
+    background-color: white;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
